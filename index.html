@@ -1,0 +1,116 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Akash Bhattacharya</title>
+  <meta name="description" content="Academic homepage of Akash Bhattacharya — teaching, research, and contact." />
+  <style>
+    :root {
+      --text: #111;
+      --muted: #666;
+      --link: #0645ad;
+      --bg: #fff;
+      --border: #e5e5e5;
+      --accent: #f6f8fa;
+      --maxw: 860px;
+    }
+    html, body { background: var(--bg); color: var(--text); }
+    body { font: 16px/1.6 system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, "Noto Sans"; margin: 0; }
+    a { color: var(--link); text-decoration-thickness: .08em; text-underline-offset: 2px; }
+    a:hover { text-decoration: underline; }
+    header { border-bottom: 1px solid var(--border); background: var(--accent); }
+    .wrap { max-width: var(--maxw); margin: 0 auto; padding: 1.25rem; }
+    .topbar { display: flex; align-items: center; gap: 1rem; flex-wrap: wrap; }
+    .brand { display: flex; align-items: center; gap: .9rem; }
+    .brand img { width: 72px; height: 72px; object-fit: cover; border-radius: 6px; border: 1px solid var(--border); background: #fff; }
+    .brand h1 { font-size: 1.35rem; margin: 0; }
+    .brand p { margin: .2rem 0 0; color: var(--muted); font-size: .95rem; }
+    nav { margin-left: auto; }
+    nav a { margin-right: 1rem; font-weight: 600; }
+    nav a:last-child { margin-right: 0; }
+
+    main .section { padding: 2rem 0 1rem; border-bottom: 1px solid var(--border); }
+    main h2 { font-size: 1.25rem; margin: 0 0 .5rem; }
+    .lede { color: var(--muted); max-width: 70ch; }
+
+    details summary { cursor: pointer; font-weight: 600; }
+    details ul { margin-top: .5rem; margin-left: 1.2rem; }
+
+    ul.clean { list-style: none; padding-left: 0; }
+    ul.clean li { margin: .4rem 0; }
+
+    footer { color: var(--muted); font-size: .9rem; padding: 2rem 0; text-align: center; }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="wrap topbar">
+      <a class="brand" href="#top">
+        <img src="assets/me.jpg" alt="Akash Bhattacharya" onerror="this.style.display='none'">
+        <div>
+          <h1>Akash Bhattacharya</h1>
+          <p>M.Sc. Statistics, Presidency University</p>
+        </div>
+      </a>
+      <nav>
+        <a href="#about">About</a>
+        <a href="#teaching">Teaching</a>
+        <a href="#research">Research</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="top" class="wrap">
+
+    <section id="about" class="section">
+      <h2>About</h2>
+      <p class="lede">I am Akash Bhattacharya, passionate about Statistics and Data Science. This is my academic homepage for teaching, research, and other academic/literary work.</p>
+      <p class="small">
+        Download CV: <a href="assets/Akash_Bhattacharya_CV.pdf">PDF</a> · 
+        GitHub: <a href="https://github.com/akashstatlab">@akashstatlab</a> · 
+        LinkedIn: <a href="https://www.linkedin.com/in/your-handle/">your-handle</a>
+      </p>
+    </section>
+
+    <section id="teaching" class="section">
+      <h2>Teaching</h2>
+      <p class="lede">Course materials, slides, and assignments will be available here.</p>
+      <details>
+        <summary>Probability and Statistics</summary>
+        <ul>
+          <li><strong>Slides:</strong>
+            <ul>
+              <li><a href="notes/prob-lecture1.pdf">Lecture 1 Slides</a></li>
+            </ul>
+          </li>
+          <li><strong>Assignments:</strong>
+            <ul>
+              <li>(to be added later)</li>
+            </ul>
+          </li>
+        </ul>
+      </details>
+    </section>
+
+    <section id="research" class="section">
+      <h2>Research</h2>
+      <p class="lede">I am interested in applied statistics, data science, and machine learning. My M.Sc. dissertation is shared below.</p>
+      <ul class="clean">
+        <li>📕 M.Sc. Dissertation — <a href="assets/dissertation.pdf">Download PDF</a></li>
+      </ul>
+    </section>
+
+   
+
+  </main>
+
+  <footer>
+    <p>© <span id="y"></span> Akash Bhattacharya. This site is plain HTML/CSS and hosted on GitHub Pages.</p>
+  </footer>
+
+  <script>
+    document.getElementById('y').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
